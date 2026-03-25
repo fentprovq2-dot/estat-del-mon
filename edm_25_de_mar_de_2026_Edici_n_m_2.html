@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estat del Món · 25 de març de 2026 · Edició núm. 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2a4a;--navy2:#243660;--light:#e8edf8;--ink:#1a1a18;--ink2:#333330;--muted:#777770;--bg:#faf9f6;--bg2:#f3f2ee;--card:#fff;--border:#d8d6cf;--border2:#e8e6df}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.7}
+.page{max-width:780px;margin:0 auto;padding:0 2rem 4rem}
+@media(max-width:600px){.page{padding:0 1.2rem 3rem}}
+.nl-header{background:var(--navy);padding:2rem 2rem 1.6rem;margin:0 -2rem 2rem;@media(max-width:600px){margin:0 -1.2rem 1.5rem}}
+.nl-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.nl-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,2.8rem);font-weight:600;color:#fff;line-height:1.1}
+.nl-tagline{font-size:14px;color:rgba(255,255,255,.6);margin-top:4px;font-style:italic}
+.nl-date{font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.toc-box{background:var(--bg2);border-radius:8px;padding:1.2rem 1.4rem;margin-bottom:2rem;border:1px solid var(--border)}
+.toc-label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+.toc-link{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--navy);text-decoration:none;padding:5px 0;border-bottom:.5px solid var(--border2);transition:color .15s}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:var(--navy2)}
+.toc-num{font-family:'Playfair Display',serif;font-size:16px;color:var(--border);min-width:22px}
+.toc-name{flex:1}
+.editorial{background:var(--bg2);border-left:4px solid var(--navy);padding:1.6rem 1.8rem;border-radius:0 8px 8px 0;margin-bottom:2.5rem}
+.ed-label{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:6px}
+.ed-title{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;color:var(--navy);margin-bottom:.9rem;line-height:1.3}
+.ed-text{font-size:15px;line-height:1.8;color:var(--ink2)}
+.ed-text p+p{margin-top:.85rem}
+hr.divider{border:none;border-top:1.5px solid var(--border);margin:2.5rem 0}
+.sec-hdr{display:flex;align-items:flex-start;gap:14px;padding:1rem 0 .8rem;border-top:2.5px solid var(--navy);margin-bottom:1rem}
+.sec-num{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:400;color:rgba(26,42,74,.18);line-height:1;min-width:48px}
+.sec-cat{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:3px}
+.sec-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--navy);line-height:1.2}
+.art-lead{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--navy);border-radius:8px;padding:1.4rem 1.6rem;margin-bottom:.5rem}
+.art-card{border-top:1px solid var(--border2);padding:1rem 0}
+.art-card:last-child{border-bottom:1px solid var(--border2)}
+.art-meta{margin-bottom:.4rem}
+.src-badge{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:var(--bg2);padding:2px 8px;border-radius:4px;border:1px solid var(--border2)}
+.art-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;line-height:1.35;margin-bottom:.4rem}
+.art-lead .art-title{font-size:1.15rem}
+.art-title a{color:var(--navy);text-decoration:none;border-bottom:1.5px solid #c0cce0;transition:border-color .15s,color .15s}
+.art-title a:hover{border-bottom-color:var(--navy)}
+.art-body{font-size:14.5px;line-height:1.76;color:var(--ink2)}
+.estat-section{margin:2.5rem 0}
+.estat-sec-hdr{border-top:2.5px solid var(--navy);padding-top:.8rem;margin-bottom:1rem}
+.estat-sec-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:4px}
+.estat-sec-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:2px}
+.estat-sec-sub{font-size:11px;color:var(--muted)}
+.estat-chart-wrap{position:relative;height:220px;margin:1rem 0}
+.estat-pubs-block{margin-top:1rem;border-top:1px solid var(--border2);padding-top:.8rem}
+.estat-pubs-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.estat-pubs-label a{font-size:11px;color:var(--navy);text-decoration:none;text-transform:none;letter-spacing:0;border-bottom:1px solid var(--border)}
+.estat-pubs-label a:hover{border-bottom-color:var(--navy)}
+.estat-pub-link{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:.5px solid var(--border2);text-decoration:none;color:inherit}
+.estat-pub-link:last-child{border-bottom:none}
+.estat-pub-link:hover .estat-pub-title{color:var(--navy)}
+.estat-pub-date{font-size:11px;color:var(--muted);white-space:nowrap;min-width:90px;flex-shrink:0;padding-top:2px}
+.estat-pub-title{font-size:13px;color:var(--ink);line-height:1.4;flex:1;transition:color .15s}
+.estat-pub-tag{font-size:10px;color:var(--muted);background:var(--bg2);border:1px solid var(--border2);padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.archive-section{border-top:1px solid var(--border);margin-top:2rem;padding-top:1.2rem}
+.archive-label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+.arch-link{display:block;font-size:13px;color:var(--navy);text-decoration:none;padding:5px 0;border-bottom:.5px solid var(--border2);transition:color .15s}
+.arch-link:last-child{border-bottom:none}
+.arch-link:hover{color:var(--navy2)}
+.nl-footer{border-top:2px solid var(--navy);margin-top:2.5rem;padding-top:1.2rem}
+.nl-footer-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:4px}
+.nl-footer-text{font-size:12px;color:var(--muted);line-height:1.7}
+@media(max-width:600px){.estat-charts{grid-template-columns:1fr}.nl-header{margin:0 -1.2rem 1.5rem;padding:1.5rem 1.2rem 1.2rem}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="nl-header">
+    <div class="nl-eyebrow">Anàlisi estratègica global</div>
+    <h1 class="nl-title">Estat del Món</h1>
+    <p class="nl-tagline">Anàlisi setmanal de les grans transformacions geopolítiques, econòmiques i estratègiques</p>
+    <p class="nl-date">25 de març de 2026 · Edició núm. 2</p>
+  </header>
+
+  <nav class="toc-box">
+    <div class="toc-label">En aquest número</div>
+      <a class="toc-link" href="#sec-s1"><span class="toc-num">I</span><span class="toc-name">Guerra a l'Iran: escalada, fracàs estratègic i el dia després</span></a>
+      <a class="toc-link" href="#sec-s2"><span class="toc-num">II</span><span class="toc-name">Europa es rearma: entre la urgència estratègica i les limitacions econòmiques</span></a>
+      <a class="toc-link" href="#sec-s3"><span class="toc-num">III</span><span class="toc-name">La resposta econòmica europea: mercat únic o declivi relatiu</span></a>
+      <a class="toc-link" href="#sec-s4"><span class="toc-num">IV</span><span class="toc-name">La Xina davant el mirall: envelliment, IA i presa de decisions al cim</span></a>
+      <a class="toc-link" href="#sec-s5"><span class="toc-num">V</span><span class="toc-name">La IA als límits: govern, educació i riscos existencials</span></a>
+  </nav>
+
+  <section class="editorial">
+    <div class="ed-label">Editorial</div>
+    <h2 class="ed-title">Europa davant del miral: el moment de la veritat estratègic</h2>
+    <div class="ed-text">
+        <p>Quan Bastian Giegerich, director de l'IISS, va presentar el Military Balance 2026 el 24 de febrer —exactament el quart aniversari de la invasió russa d'Ucraïna— va dir una cosa simple i devastadora: «Europa necessita assumir una responsabilitat major per a la seva pròpia defensa.» No era cap novetat. Però el context en què es deia sí que ho era: un atac americà sobre l'Iran acabat de produir, la despesa de defensa europea disparada al 21% del total mundial, i Alemanya convertida en el gran pagador del rearma continental amb un pressupost de defensa que doblarà el de 2021 el 2029.</p>
+        <p>El que emergeix d'aquesta setmana de lectures és una Europa que s'ha vist obligada a créixer estratègicament de pressa, però que ho fa sobre unes bases econòmiques febles. El CEPR ho diu sense ambigüitats: la resposta als aranzels de Trump no pot ser defensiva ni proteccionista. Ha de ser productivitat, mercat únic real, energia barata i lideratge tecnològic. Mentre Europa gasta en defensa el que no gastava des de la Guerra Freda, la inversió privada empresarial s'ha estancat. Construir canons i tenir empreses que competeixen globalment no és incompatible, però requereix una política econòmica que l'Europa d'avui encara no té.</p>
+        <p>Al Pròxim Orient, la guerra a l'Iran entra en una fase nova i més perillosa. RAND adverteix que l'estratègia d'escalada de Teheran pot ser racionalment comprensible però estratègicament suïcida. Chatham House apunta que la «defensa avançada» iraniana —Hezbollah, Hamas, els Houthis— ha quedat desarticulada. I l'ECFR treu una conclusió incòmoda: la Xina, no Rússia, podria ser el gran guanyador geopolític del conflicte, si Pequín aconsegueix posicionar-se com a mediador i garant energètic regional en el buit que deixen uns EUA militarment estirats i una Europa absent.</p>
+        <p>Hi ha, finalment, una variable que totes les anàlisis d'aquesta setmana subratllen però que rarament ocupa el centre del debat públic: el relleu generacional de la classe dirigent xinesa. RAND publica un estudi sobre els processos de presa de decisions en seguretat nacional a Pequín que revela com Xi Jinping ha concentrat el control fins a eliminar pràcticament tota deliberació interna. En un moment de crisi accelerada —Iran, Taiwan, Ucraïna, IA— un sistema de decisió tan centralitzat és o una font extraordinària d'eficiència o una recepta per a l'error catastròfic. La diferència la marcarà la qualitat d'un sol home.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+    <section id="sec-s1">
+      <div class="sec-hdr">
+        <span class="sec-num">I</span>
+        <div>
+          <div class="sec-cat">Conflicte · Orient Mitjà</div>
+          <h2 class="sec-name">Guerra a l'Iran: escalada, fracàs estratègic i el dia després</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">IISS · Military Balance 2026 · Febrer 2026</span></div>
+        <h3 class="art-title"><a href="https://www.iiss.org/publications/the-military-balance/2026/the-military-balance-2026/global-defence-spending/" target="_blank" rel="noopener">La despesa militar mundial arriba als 2,63 bilions de dòlars: Europa impulsa el creixement per primera vegada des de la Guerra Freda</a></h3>
+        <p class="art-body">El Military Balance 2026 de l'IISS confirma que la despesa militar mundial va créixer un 2,5% en termes reals el 2025, fins als 2,63 bilions de dòlars. El factor diferencial: Europa és, per primera vegada des dels anys vuitanta, el motor principal d'aquest creixement, amb un increment del 13% en termes reals. La despesa europea representa ara el 21% del total global, enfront del 17% de 2022. Alemanya encapçala el salt, amb un pressupost que passarà dels 53.000 milions de dòlars de 2021 als 188.000 milions previstos el 2029. Els EUA preveu superar per primera vegada el bilió de dòlars en despesa de defensa el 2026, però l'IISS adverteix que la sostenibilitat d'aquesta xifra és incerta atès el mecanisme legislatiu complex que la fa possible.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">RAND · 19 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/commentary/2026/03/irans-escalation-strategy-wont-work.html" target="_blank" rel="noopener">L'estratègia d'escalada de l'Iran porta a un calze sense sortida</a></h3>
+        <p class="art-body">Raphael S. Cohen de RAND analitza per què l'estratègia iraniana d'«escalar per desescalar» té totes les possibilitats de resultar contraproduent. Teheran ha respost a l'atac americà-israelià del 28 de febrer atacant tercers països fins ara neutrals —Oman, Qatar, Turquia— amb la hipòtesi que augmentant el cost als aliats dels EUA forçarà una cessació del foc. Però Aràbia Saudita i els Emirats tenen un pressupost de defensa que triplica el d'Iran i pesen una resposta pròpia. La conclusió: Teheran podria acabar la guerra més pobre, més feble i més aïllat que al principi.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Chatham House · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.chathamhouse.org/publications/the-world-today/2026-03/editor" target="_blank" rel="noopener">L'efecte Trump i la fi de la «defensa avançada» iraniana</a></h3>
+        <p class="art-body">La revista The World Today de Chatham House dedica la seva portada de primavera a «L'efecte Trump». Sanam Vakil analitza com la campanya americano-israeliana ha desarticulat l'estratègia d'«avantguarda» o «defensa avançada» que l'Iran havia construït durant dues dècades: Hezbollah debilitat pels atacs israelians, Hamas desmantellat a Gaza, els Houthis sota pressió. Sense la seva xarxa de proxies regionals, Iran perd la seva principal eina de disuasió asimètrica. El règim pot sobreviure militarment, però ha perdut la seva projecció estratègica regional.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">ECFR · Març 2026</span></div>
+        <h3 class="art-title"><a href="https://ecfr.eu/commentaries/" target="_blank" rel="noopener">Per què la Xina, i no Rússia, podria ser el gran guanyador de la guerra a l'Iran</a></h3>
+        <p class="art-body">L'ECFR argumenta que la guerra a l'Iran reforça la posició geopolítica de la Xina de manera inesperada. Mentre els EUA s'estira militarment al Pròxim Orient i Rússia perd influència regional, Pequín pot posicionar-se com a mediador creïble, garant del subministrament energètic i soci econòmic alternatiu per als països de la región. La ironia és que Xina pateix a curt termini pels preus de l'energia, però guanya estratègicament en el redisseny de les aliances regionals post-conflicte.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s2">
+      <div class="sec-hdr">
+        <span class="sec-num">II</span>
+        <div>
+          <div class="sec-cat">Seguretat · Europa</div>
+          <h2 class="sec-name">Europa es rearma: entre la urgència estratègica i les limitacions econòmiques</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">IISS · Febrer 2026</span></div>
+        <h3 class="art-title"><a href="https://www.iiss.org/online-analysis/military-balance/2026/02/global-defence-spending-continues-to-grow-amid-geopolitical-uncertainty/" target="_blank" rel="noopener">Europa té dèficits crítics de capacitat: la despesa creix però els buits operatius persisteixen</a></h3>
+        <p class="art-body">Malgrat el creixement de la despesa, l'IISS alerta que Europa té «dèficits importants de capacitat» que la deixen «mal preparada per al tipus d'atacs a gran escala que Ucraïna afronta». El cap de l'OTAN, Mark Rutte, ha demanat un increment del 400% en la defensa antiaèria i antimíssil integrada. L'IISS destaca el Programa europeu de l'Escut del Cel liderat per Alemanya i la Drone Wall Bàltica —Estònia, Letònia, Lituània, Polònia i Finlàndia— com a iniciatives concretes, però adverteix que la bretxa entre despesa i capacitat real continuarà sent significativa durant anys.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Bruegel · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.bruegel.org/first-glance/europe-should-build-frances-nuclear-deterrent-extension-offer" target="_blank" rel="noopener">La proposta nuclear francesa: una nova fase en l'autonomia estratègica europea</a></h3>
+        <p class="art-body">Nicoli i Pench de Bruegel analitzen la proposta de Macron d'estendre el paraigua nuclear francès a socis europeus. La qualifiquen de «punt de partida més sòlid disponible» en l'autonomia estratègica europea, malgrat la seva limitació estructural: la decisió de llançament roman al president francès. Alemanya, Bèlgica i Polònia han mostrat interès. L'anàlisi adverteix que el sistema serà tan creïble com estable sigui la política interior francesa.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Chatham House · Març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.chathamhouse.org/topics/defence-and-security" target="_blank" rel="noopener">Europa reduirà la seva dependència dels EUA de forma permanent, avisen els analistes de defensa</a></h3>
+        <p class="art-body">Chatham House conclou que el moviment d'Europa cap a l'autonomia de defensa és ara «probablement permanent». La direcció estratègica dels EUA sota Trump ha trencat la confiança en la garantia americana de manera estructural, no conjuntural. Els investigadors demanen als responsables polítics americans que reconeguin aquesta nova realitat en lloc de tractar-la com una crisi temporal que es resoldrà amb el proper cicle electoral.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s3">
+      <div class="sec-hdr">
+        <span class="sec-num">III</span>
+        <div>
+          <div class="sec-cat">Economia · Europa</div>
+          <h2 class="sec-name">La resposta econòmica europea: mercat únic o declivi relatiu</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">CEPR · VoxEU · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://cepr.org/voxeu/columns/europe-2050-geometries-peace-power-and-prosperity" target="_blank" rel="noopener">Europa 2050: Blanchard, Lamy i Letta proposen una visió estratègica per als propers 25 anys</a></h3>
+        <p class="art-body">Olivier Blanchard, Pascal Lamy i Enrico Letta llancen la iniciativa «Europa 2050» del CEPR, que proposa una visió estratègica de llarg termini per al continent. El diagnòstic de partida és dur: Europa ha estat «despertada violentament una dotzena de vegades» en cinc anys —pandèmia, guerra, crisi energètica, Trump 2.0— i cada crisi ha revelat noves fragilitats estructurals. La visió de 2050 inclou una energia abundant i neta, un mercat únic de serveis real, una governança molt més descentralitzada i una acció col·lectiva europea en defensa, comerç, clima i regulació tecnològica.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">CEPR · VoxEU</span></div>
+        <h3 class="art-title"><a href="https://cepr.org/voxeu/columns/strategic-autonomy-europe-requires-economic-growth" target="_blank" rel="noopener">L'autonomia estratègica d'Europa requereix creixement econòmic, no proteccionisme</a></h3>
+        <p class="art-body">Philippe Martin argumenta al CEPR que la resposta europea als aranzels de Trump ha de ser força, no feblesa. Les barreres internes a la UE equivalen a un aranzel del 45% en béns i del 110% en serveis —xifres superiors als aranzels més agressius de l'administració Trump contra la Xina. Fins que Europa no elimini les seves pròpies fragmentacions internes, la seva autonomia estratègica serà retòrica. La proposta: productivitat, energia barata, mercat únic real i lideratge tecnològic com a resposta a la nova geopolítica comercial.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">CEPR · VoxEU</span></div>
+        <h3 class="art-title"><a href="https://cepr.org/voxeu/columns/capitalising-europes-strengths" target="_blank" rel="noopener">El Mercat Únic ha sostingut el 25% de la nova inversió a la UE des dels anys vuitanta</a></h3>
+        <p class="art-body">L'Informe d'Inversions 2025/2026 del Banc Europeu d'Inversions, analitzat al CEPR, revela que el Mercat Únic ha estat el sustent del 25% de tota nova inversió a la UE des dels anys vuitanta. Però la integració s'està estancant: el 62% de les empreses exportadores dins la UE declara que afronta barreres al comerç intracomunità. Eliminar-les podria millorar la intensitat inversora en un 10%. La conclusió: Europa té un actiu estratègic infrautilitzat en el seu propi mercat interior.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Bruegel · 11 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.bruegel.org/analysis/dependence-fossil-fuels-not-united-states-europes-worry" target="_blank" rel="noopener">La dependència energètica d'Europa és dels combustibles fòssils, no dels EUA</a></h3>
+        <p class="art-body">Keliauskaitė, McWilliams i Zachmann de Bruegel corregeixen el relat dominant: la vulnerabilitat energètica real d'Europa no és la dependència americana, sinó la dels combustibles fòssils en general. El conflicte iranià i la seva pressió sobre el Dret d'Ormuz —el tràfic ha caigut un 90%— demostra exactament aquest punt. Accelerar la transició energètica és, simultàniament, la millor política mediambiental i la millor assegurança geoestratègica.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s4">
+      <div class="sec-hdr">
+        <span class="sec-num">IV</span>
+        <div>
+          <div class="sec-cat">Àsia · Geopolítica</div>
+          <h2 class="sec-name">La Xina davant el mirall: envelliment, IA i presa de decisions al cim</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">RAND · 12 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/research_briefs/RBA3372-1.html" target="_blank" rel="noopener">L'envelliment de la població xinesa i les seves implicacions per a la seguretat global</a></h3>
+        <p class="art-body">RAND publica una anàlisi exhaustiva sobre com l'envelliment demogràfic accelerat de la Xina —amb una ràtio de dependència que s'espera que dobli d'aquí al 2050— reconfigurarà la seva estratègia de seguretat. Les implicacions son múltiples: pressió creixent sobre la despesa social que competeix amb la despesa de defensa, reducció del reservori de reclutes joves, i incentiu per accelerar la substitució de personal militar per sistemes autònoms i IA. L'anàlisi conclou que la finestra temporal de màxima capacitat militar xinesa convencional podria ser més curta del que sovint s'assumeix.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">RAND · 10 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/perspectives/PEA3715-1.html" target="_blank" rel="noopener">La presa de decisions de seguretat nacional a la Xina: concentració de poder i riscos d'error</a></h3>
+        <p class="art-body">Un informe de RAND sobre els mecanismes de decisió en seguretat nacional a Pequín revela fins a quin punt Xi Jinping ha centralitzat el control eliminant pràcticament tots els mecanismes de deliberació interna. En crises de moviment ràpid —la guerra a l'Iran, una possible crisi de Taiwan, pressions econòmiques externes— aquest sistema pot ser extraordinàriament àgil o catastròficament equivocat, sense punt mig. L'anàlisi destaca la dificultat que té el món exterior per detectar senyals d'advertència prèvies a una decisió estratègica xinesa de gran abast.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">RAND · 10 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/research_reports/RRA3849-1.html" target="_blank" rel="noopener">Cooperació estratègica en intel·ligència artificial: el nou front de la competició entre grans potències</a></h3>
+        <p class="art-body">RAND analitza les possibilitats i límits de la cooperació internacional en IA entre EUA, Xina i les potències europees. El repte central: la IA és simultàniament una tecnologia de doble ús civil-militar i un camp on la competició i la cooperació son necessàries alhora. L'informe proposa un marc de «competició responsable» amb regles de seguretat acordades en àmbits específics —sistemes autònoms d'armes, IA en xarxes elèctriques— mentre es manté la competició en els sectors productius.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s5">
+      <div class="sec-hdr">
+        <span class="sec-num">V</span>
+        <div>
+          <div class="sec-cat">Tecnologia · Societat · Futur</div>
+          <h2 class="sec-name">La IA als límits: govern, educació i riscos existencials</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">Club of Rome · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.clubofrome.org/pillars/material-transformations/agi-open-letter/" target="_blank" rel="noopener">Carta oberta a l'ONU: calen mesures d'emergència per governar la Intel·ligència Artificial General</a></h3>
+        <p class="art-body">Més de trenta líders internacionals —científics, acadèmics i representants de la societat civil— signen una carta oberta al president de l'Assemblea General de l'ONU demanant una sessió especial sobre la governança de l'AGI. L'argument: a diferència dels sistemes d'IA actuals, l'AGI podria reescriure el seu propi codi i desenvolupar objectius fora del control humà. Jerome Glenn adverteix que el panel científic de l'ONU trigarà un any a produir les seves primeres conclusions —i que en aquest temps la IA haurà avançat diverses generacions. Paul Shrivastava del Club of Rome: «L'AGI no és un problema futur, arriba ara.»</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">RAND · 18 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/podcasts/policy-minded/2026/youth-are-using-chatbots-as-therapists.html" target="_blank" rel="noopener">Els joves fan servir xatbots com a terapeutes: riscos i oportunitats d'una nova relació amb la IA</a></h3>
+        <p class="art-body">RAND documenta una tendència creixent entre joves de 16 a 25 anys que utilitzen sistemes d'IA conversacional com a suport emocional i, en alguns casos, substitut de la teràpia psicològica. Les implicacions son ambivalents: l'accés s'amplia per a qui no pot pagar-se un terapeuta, però els riscos son significatius quan el sistema no detecta una crisi real o reforça patrons de pensament disfuncionals. L'informe demana regulació específica per als sistemes d'IA en contextos de salut mental i protocols clars de derivació a professionals humans.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Fondation Jean-Jaurès · 12 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.jean-jaures.org/videos-podcasts/municipales-quelle-recomposition-et-quels-clivages-a-un-an-de-la-presidentielle/" target="_blank" rel="noopener">França: les municipals 2026 reconfiguran el mapa polític a un any de les presidencials</a></h3>
+        <p class="art-body">Chau, Finchelstein i Muxel de la Fondation Jean-Jaurès analitzen com les eleccions municipals de 2026 reescriuen el mapa polític francès. Triple fragmentació simultània: la dreta gaullista no s'ha refet, l'esquerra continua dividida entre el PS i la França Insubmisa, i la bipolaritat Macron/Le Pen s'ha complicat amb nous actors centristes i regionals. El sistema electoral de volta única a les municipals afavoreix aliances locals que difícilment es reprodueixen a escala presidencial. A un any de les presidencials de 2027, l'escenari és completament obert.</p>
+      </div>
+    </section>
+    <hr class="divider">
+
+    <section class="estat-section">
+      <div class="estat-sec-hdr">
+        <div class="estat-sec-eyebrow">Estadístiques · Eurostat</div>
+        <div class="estat-sec-title">PIB i creixement econòmic</div>
+        <div class="estat-sec-sub">Variació trimestral del PIB — Zona Euro (%)</div>
+      </div>
+      <div class="estat-chart-wrap"><canvas id="estat-main-chart"></canvas></div>
+      <div class="estat-pubs-block">
+        <div class="estat-pubs-label">Darreres publicacions d'Eurostat <a href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener">Veure totes →</a></div>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-18032026-ap" target="_blank" rel="noopener"><span class="estat-pub-date">18 març 2026</span><span class="estat-pub-title">Inflació zona euro: 1,9% el febrer de 2026</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/databrowser/view/NAMQ_10_GDP" target="_blank" rel="noopener"><span class="estat-pub-date">19 març 2026</span><span class="estat-pub-title">PIB i components principals — actualització Q4 2025</span><span class="estat-pub-tag">Dades</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">17 març 2026</span><span class="estat-pub-title">Atur UE: 5,8% al gener de 2026</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">14 març 2026</span><span class="estat-pub-title">Producció industrial — reducció de l'1,5% al gener</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">12 març 2026</span><span class="estat-pub-title">Costos laborals horaris: +3,3% al Q4 2025 (zona euro)</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/web/interactive-publications/energy-2026" target="_blank" rel="noopener"><span class="estat-pub-date">10 març 2026</span><span class="estat-pub-title">Energia a Europa — Publicació interactiva 2026</span><span class="estat-pub-tag">Publicació</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/statistics-explained/index.php/International_trade_in_goods_statistics" target="_blank" rel="noopener"><span class="estat-pub-date">7 març 2026</span><span class="estat-pub-title">Comerç exterior UE: balanç del Q4 2025</span><span class="estat-pub-tag">Dades</span></a>
+      </div>
+    </section>
+    <hr class="divider">
+
+  <footer class="nl-footer">
+    <div class="nl-footer-title">Estat del Món</div>
+    <div class="nl-footer-text">Fonts: RAND · Bruegel · Carnegie Endowment · ECFR · SIPRI · IISS · Chatham House · CEPR · Crisis Group · Club of Rome · PIIE · IMF · Jean-Jaurès<br>Compilat el 25 de març de 2026 · Edició núm. 2 · Per a ús intern i informatiu</div>
+
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+function loadEstatChart(labels,data,color,unit){
+  const c=document.getElementById('estat-main-chart');if(!c)return;
+  new Chart(c,{type:'line',data:{labels,datasets:[{data,borderColor:color,backgroundColor:color+'18',borderWidth:2.5,pointRadius:3,tension:0.35,fill:true,spanGaps:true}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.parsed.y!==null?ctx.parsed.y.toFixed(2):'—'} ${unit}`}}},scales:{x:{ticks:{font:{size:10},maxRotation:45,color:'#888',autoSkip:false,maxTicksLimit:12},grid:{color:'#e8e6df'}},y:{ticks:{font:{size:10},color:'#888'},grid:{color:'#e8e6df'}}}}});
+}
+loadEstatChart(["2022-Q1","2022-Q2","2022-Q3","2022-Q4","2023-Q1","2023-Q2","2023-Q3","2023-Q4","2024-Q1","2024-Q2","2024-Q3","2024-Q4","2025-Q1","2025-Q2","2025-Q3","2025-Q4"],[0.7,0.9,0.5,-0.1,0,0.2,0,0.1,0.3,0.2,0.4,0.4,0.6,0.1,0.3,0.2],'#1a3a7a','% var. trim.');
+</script>
+</body>
+</html>
