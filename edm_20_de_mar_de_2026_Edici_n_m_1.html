@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estat del Món · 20 de març de 2026 · Edició núm. 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2a4a;--navy2:#243660;--light:#e8edf8;--ink:#1a1a18;--ink2:#333330;--muted:#777770;--bg:#faf9f6;--bg2:#f3f2ee;--card:#fff;--border:#d8d6cf;--border2:#e8e6df}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.7}
+.page{max-width:780px;margin:0 auto;padding:0 2rem 4rem}
+@media(max-width:600px){.page{padding:0 1.2rem 3rem}}
+.nl-header{background:var(--navy);padding:2rem 2rem 1.6rem;margin:0 -2rem 2rem;@media(max-width:600px){margin:0 -1.2rem 1.5rem}}
+.nl-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.nl-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,2.8rem);font-weight:600;color:#fff;line-height:1.1}
+.nl-tagline{font-size:14px;color:rgba(255,255,255,.6);margin-top:4px;font-style:italic}
+.nl-date{font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.toc-box{background:var(--bg2);border-radius:8px;padding:1.2rem 1.4rem;margin-bottom:2rem;border:1px solid var(--border)}
+.toc-label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+.toc-link{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--navy);text-decoration:none;padding:5px 0;border-bottom:.5px solid var(--border2);transition:color .15s}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:var(--navy2)}
+.toc-num{font-family:'Playfair Display',serif;font-size:16px;color:var(--border);min-width:22px}
+.toc-name{flex:1}
+.editorial{background:var(--bg2);border-left:4px solid var(--navy);padding:1.6rem 1.8rem;border-radius:0 8px 8px 0;margin-bottom:2.5rem}
+.ed-label{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:6px}
+.ed-title{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;color:var(--navy);margin-bottom:.9rem;line-height:1.3}
+.ed-text{font-size:15px;line-height:1.8;color:var(--ink2)}
+.ed-text p+p{margin-top:.85rem}
+hr.divider{border:none;border-top:1.5px solid var(--border);margin:2.5rem 0}
+.sec-hdr{display:flex;align-items:flex-start;gap:14px;padding:1rem 0 .8rem;border-top:2.5px solid var(--navy);margin-bottom:1rem}
+.sec-num{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:400;color:rgba(26,42,74,.18);line-height:1;min-width:48px}
+.sec-cat{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:3px}
+.sec-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--navy);line-height:1.2}
+.art-lead{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--navy);border-radius:8px;padding:1.4rem 1.6rem;margin-bottom:.5rem}
+.art-card{border-top:1px solid var(--border2);padding:1rem 0}
+.art-card:last-child{border-bottom:1px solid var(--border2)}
+.art-meta{margin-bottom:.4rem}
+.src-badge{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:var(--bg2);padding:2px 8px;border-radius:4px;border:1px solid var(--border2)}
+.art-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;line-height:1.35;margin-bottom:.4rem}
+.art-lead .art-title{font-size:1.15rem}
+.art-title a{color:var(--navy);text-decoration:none;border-bottom:1.5px solid #c0cce0;transition:border-color .15s,color .15s}
+.art-title a:hover{border-bottom-color:var(--navy)}
+.art-body{font-size:14.5px;line-height:1.76;color:var(--ink2)}
+.estat-section{margin:2.5rem 0}
+.estat-sec-hdr{border-top:2.5px solid var(--navy);padding-top:.8rem;margin-bottom:1rem}
+.estat-sec-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:4px}
+.estat-sec-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:2px}
+.estat-sec-sub{font-size:11px;color:var(--muted)}
+.estat-chart-wrap{position:relative;height:220px;margin:1rem 0}
+.estat-pubs-block{margin-top:1rem;border-top:1px solid var(--border2);padding-top:.8rem}
+.estat-pubs-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.estat-pubs-label a{font-size:11px;color:var(--navy);text-decoration:none;text-transform:none;letter-spacing:0;border-bottom:1px solid var(--border)}
+.estat-pubs-label a:hover{border-bottom-color:var(--navy)}
+.estat-pub-link{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:.5px solid var(--border2);text-decoration:none;color:inherit}
+.estat-pub-link:last-child{border-bottom:none}
+.estat-pub-link:hover .estat-pub-title{color:var(--navy)}
+.estat-pub-date{font-size:11px;color:var(--muted);white-space:nowrap;min-width:90px;flex-shrink:0;padding-top:2px}
+.estat-pub-title{font-size:13px;color:var(--ink);line-height:1.4;flex:1;transition:color .15s}
+.estat-pub-tag{font-size:10px;color:var(--muted);background:var(--bg2);border:1px solid var(--border2);padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.archive-section{border-top:1px solid var(--border);margin-top:2rem;padding-top:1.2rem}
+.archive-label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+.arch-link{display:block;font-size:13px;color:var(--navy);text-decoration:none;padding:5px 0;border-bottom:.5px solid var(--border2);transition:color .15s}
+.arch-link:last-child{border-bottom:none}
+.arch-link:hover{color:var(--navy2)}
+.nl-footer{border-top:2px solid var(--navy);margin-top:2.5rem;padding-top:1.2rem}
+.nl-footer-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:4px}
+.nl-footer-text{font-size:12px;color:var(--muted);line-height:1.7}
+@media(max-width:600px){.estat-charts{grid-template-columns:1fr}.nl-header{margin:0 -1.2rem 1.5rem;padding:1.5rem 1.2rem 1.2rem}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="nl-header">
+    <div class="nl-eyebrow">Anàlisi estratègica global</div>
+    <h1 class="nl-title">Estat del Món</h1>
+    <p class="nl-tagline">Anàlisi setmanal de les grans transformacions geopolítiques, econòmiques i estratègiques</p>
+    <p class="nl-date">20 de març de 2026 · Edició núm. 1</p>
+  </header>
+
+  <nav class="toc-box">
+    <div class="toc-label">En aquest número</div>
+      <a class="toc-link" href="#sec-s1"><span class="toc-num">I</span><span class="toc-name">La guerra a l'Iran: escalada sense sortida a la vista</span></a>
+      <a class="toc-link" href="#sec-s2"><span class="toc-num">II</span><span class="toc-name">Europa en peu de guerra: armament, nucli i flancs</span></a>
+      <a class="toc-link" href="#sec-s3"><span class="toc-num">III</span><span class="toc-name">Reconfiguració de l'ordre: potències mitjanes i nous equilibris</span></a>
+      <a class="toc-link" href="#sec-s4"><span class="toc-num">IV</span><span class="toc-name">Economia global: resiliència fràgil sota pressió arancelera</span></a>
+      <a class="toc-link" href="#sec-s5"><span class="toc-num">V</span><span class="toc-name">IA, demografia i els límits del model de creixement</span></a>
+  </nav>
+
+  <section class="editorial">
+    <div class="ed-label">Editorial</div>
+    <h2 class="ed-title">La setmana en què el món va accelerar el seu propi canvi</h2>
+    <div class="ed-text">
+        <p>Hi ha setmanes en què els esdeveniments s'acumulen de manera tan densa que el repte no és informar-ne, sinó trobar el fil que els connecta. Aquesta n'és una. La guerra a l'Iran continua reconfigurant el Pròxim Orient a una velocitat que deixa les institucions multilaterals sense capacitat de resposta; les transferències internacionals d'armament han assolit un rècord absolut en els últims cinc anys, amb Europa com a gran receptor; i les economies avançades naveguen entre una resiliència sorprenent i fragilitats estructurals que el FMI no para d'advertir.</p>
+        <p>El que uneix tots aquests episodis és una paradoxa central: el món s'ha tornat extraordinàriament resilient davant els xocs —el creixement global aguanta al 3,3%— però aquesta resiliència reposa sobre unes bases cada vegada més estretes. L'economia mundial tira endavant gràcies a uns pocs sectors tecnològics i a una despesa fiscal que s'accelera a Europa per raons de defensa més que de benestar. El multilateralisme, per la seva banda, segueix perdent terreny davant la lògica bilateral i transaccional que imposa l'administració Trump.</p>
+        <p>Europa, en aquest context, viu un moment de veritat. L'oferta nuclear de Macron, la retirada russa de les seves perifèries, les xifres rècord de compra d'armament: tot apunta a un continent que s'ha vist forçat a assumir la seva seguretat però que encara no ha trobat la fórmula política per fer-ho de manera col·lectiva i creïble. La finestra d'oportunitat existeix. La pregunta és si la voluntat política seguirà el mateix ritme que la urgència estratègica.</p>
+        <p>Al fons de tot hi ha una qüestió que les fonts d'aquesta setmana aborden des de diverses angles: quina governança és possible en un món on la velocitat del canvi tecnològic —especialment de la IA— supera la capacitat de les institucions de regular-lo? La carta oberta del Club of Rome demanant una sessió d'emergència de l'ONU sobre l'AGI no és una extravagància acadèmica: és un senyal que els sistemes d'advertència primerenca de la comunitat científica global han entrat en mode d'alerta.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+    <section id="sec-s1">
+      <div class="sec-hdr">
+        <span class="sec-num">I</span>
+        <div>
+          <div class="sec-cat">Conflicte · Orient Mitjà</div>
+          <h2 class="sec-name">La guerra a l'Iran: escalada sense sortida a la vista</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">RAND · 19 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/commentary/2026/03/irans-escalation-strategy-wont-work.html" target="_blank" rel="noopener">L'estratègia d'escalada de l'Iran porta a un calze sense sortida</a></h3>
+        <p class="art-body">Raphael S. Cohen adverteix que la política d'«escalar per desescalar» de Teheran podria resultar radicalment contraproduent. En l'atac del 28 de febrer, EUA i Israel van decapitar el lideratge del règim iranià. Teheran ha respost atacant països fins ara neutrals —Oman, Qatar, Turquia— i infraestructures civils com aeroports, hotels i instal·lacions petrolíferes. La hipòtesi de Teheran és que danyant els socis dels EUA incrementarà la pressió per una cessació del foc. Però les estratègies d'«escalar per desescalar» rarament funcionen: Aràbia Saudita i els Emirats pesen una resposta militar pròpia, amb un pressupost de defensa saudita de 78.000 milions de dòlars que triplica el d'Iran. El resultat previsible és que el règim acabi més pobre, més dèbil i més aïllat.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Carnegie Europe · 3 març 2026</span></div>
+        <h3 class="art-title"><a href="https://carnegieendowment.org/europe/strategic-europe/2026/03/europe-on-iran-gone-with-the-wind" target="_blank" rel="noopener">Europa sobre l'Iran: una abdicació estratègica</a></h3>
+        <p class="art-body">Pierre Vimont, ex-secretari general del SEAE, diagnostica que la UE —motor del JCPOA el 2003-2015— avui s'ha convertit en un «mer comentarista» dels esdeveniments. Quan EUA i Israel van llançar l'atac del 28 de febrer, que va matar Khamenei, la UE va emetre un comunicat evasiu que evitava pronunciar-se sobre el fons: un intent deliberat d'enderrocar el govern d'un estat sobirà. Un estat membre, Xipre, ha patit atacs directes a la base britànica d'Akrotiri. Vimont adverteix que la passivitat europea reforça la percepció de doble estàndard, debilita la posició d'Europa en el conflicte d'Ucraïna i la condemna a la irrellevància en el redisseny del Pròxim Orient post-guerra.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Bruegel · 17 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.bruegel.org/analysis/what-war-iran-means-china" target="_blank" rel="noopener">Què significa el conflicte iranià per a la Xina</a></h3>
+        <p class="art-body">Alicia García-Herrero analitza com la Xina, el major importador mundial de petroli, afronta una interrupció severa dels seus subministraments energètics. L'Iran havia proporcionat fins a 1,4 milions de barrils diaris —el 13% del total de les importacions xineses de cru— a preus subvencionats en el marc de l'acord de cooperació de 25 anys signat el 2021. Malgrat les reserves estratègiques, una prolongació del conflicte podria erosionar la competitivitat exportadora xinesa i posar en qüestió les aliances geopolítiques que Pequín ha construït a la regió. Pequín es troba en una posició incòmoda: ni beligerant ni aliada de l'OTAN, obligada a redefinir la seva estratègia d'influència en un moment crític.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">CSIS · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.csis.org/events/russia-and-china-gaining-war-iran-state-play" target="_blank" rel="noopener">Rússia i la Xina guanyen terreny amb la guerra a l'Iran?</a></h3>
+        <p class="art-body">El CSIS examina si Moscou i Pequín en surten beneficiats del conflicte iranià. La hipòtesi temptadora és que, mentre EUA destina recursos al Pròxim Orient, Rússia pot respirar al front d'Ucraïna i la Xina pot consolidar la seva penetració econòmica regional. La conclusió és matisada: la inestabilitat energètica perjudica la Xina tant com l'afavoreix, i Rússia —incapaç de sostenir les seves aliances— hi perd credibilitat com a actor geopolític de primera fila. La guerra iraniana no és un regal estratègic net per a cap dels dos.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s2">
+      <div class="sec-hdr">
+        <span class="sec-num">II</span>
+        <div>
+          <div class="sec-cat">Seguretat · Europa</div>
+          <h2 class="sec-name">Europa en peu de guerra: armament, nucli i flancs</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">SIPRI · 9 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.sipri.org/media/press-release/2026/global-arms-flows-jump-nearly-10-cent-european-demand-soars" target="_blank" rel="noopener">Les transferències internacionals d'armes s'han disparat un 9,2% en cinc anys, amb Europa com a gran receptor</a></h3>
+        <p class="art-body">El SIPRI publica les seves dades quinquennals sobre transferències mundials d'armes (2021-2025), confirmant un increment del 9,2% respecte al quinquenni anterior. El dato més rellevant: els estats europeus han triplicat les seves importacions d'armament, convertint-se en la gran regió receptora mundial. Les exportacions americanes han crescut un 27% global, però el salt és espectacular cap a Europa: un 217% d'augment. Les dades confirmen que la rearmació europea no és un debat polític sinó ja una realitat estadística de primera magnitud.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Bruegel · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.bruegel.org/first-glance/europe-should-build-frances-nuclear-deterrent-extension-offer" target="_blank" rel="noopener">La proposta nuclear francesa: oportunitat real per a Europa, però amb límits estructurals</a></h3>
+        <p class="art-body">L'anunci de Macron d'estendre el paraigua nuclear francès a socis europeus —Alemanya, Bèlgica i Polònia ja han mostrat interès— marca la proposta més concreta d'autonomia estratègica europea des del final de la Guerra Freda. Nicoli i Pench de Bruegel analitzen les opcions: des d'un compromís de protecció fins a un model de «nuclear sharing» similar al de l'OTAN. La limitació estructural és clara: la decisió de llançament roman en mans del president francès. El sistema «estarà sempre a una mala elecció electoral de perdre credibilitat», però és el punt de partida més sòlid disponible mentre els EUA vaciŀlen.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Carnegie Europe · 19 març 2026</span></div>
+        <h3 class="art-title"><a href="https://carnegieendowment.org/europe/strategic-europe/2026/03/russias-imperial-retreat-is-europes-strategic-opportunity" target="_blank" rel="noopener">La retirada imperial de Rússia és l'oportunitat estratègica d'Europa</a></h3>
+        <p class="art-body">Dixon i Beznosiuk argumenten que la guerra d'Ucraïna ha obligat el Kremlin a «empenyorar el seu imperi d'ultramar»: la dependència d'armament rus a Armènia ha caigut del 96% al 10% en tres anys. El corredor TRIPP, que connecta el Caspi amb el Mediterrani a través d'Armènia amb participació americana majoritària, obre una finestra per a Europa. Els autors reclamen un fons d'infraestructura fronterera al Caucas del Sud —fibra òptica, terminals de duanes automatitzades, corredors 5G— per assegurar que la nova connectivitat regional es construeixi sobre estàndards europeus i no xinesos.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">CSIS · 18 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.csis.org/events/estonia-european-defense-and-evolving-eastern-flank" target="_blank" rel="noopener">Estònia, la defensa europea i el flanc est en evolució</a></h3>
+        <p class="art-body">Estònia ha incrementat la seva despesa de defensa al 3,4% del PIB i pressiona perquè l'OTAN reforci permanentment el flanc est. El debat reflecteix la tensió central del moment europeu: entre la visió d'un continent que ha d'assumir la seva seguretat autònomament i la realitat que, sense els EUA, les capacitats europees no cobreixen les necessitats de dissuasió efectiva davant Rússia. Per als estats bàltics, la dependència de la garantia americana s'ha acabat conceptualment; ara el repte és construir una alternativa real.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s3">
+      <div class="sec-hdr">
+        <span class="sec-num">III</span>
+        <div>
+          <div class="sec-cat">Geopolítica · Ordre global</div>
+          <h2 class="sec-name">Reconfiguració de l'ordre: potències mitjanes i nous equilibris</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">ECFR · 12 febrer 2026</span></div>
+        <h3 class="art-title"><a href="https://ecfr.eu/publication/after-the-rupture-middle-powers-and-the-construction-of-new-order/" target="_blank" rel="noopener">Les potències mitjanes construeixen un nou ordre: Europa hauria d'implicar-s'hi pragmàticament</a></h3>
+        <p class="art-body">Dworkin, Loss i Puglierin de l'ECFR argumenten que, mentre el lideratge americà s'erosiona, les potències mitjanes —Turquia, Brasil, Índia, els estats del Golf— estan cosint un ordre paral·lel a través de nous formats de mediació de conflictes, connectivitat i desenvolupament. Aquests formats son fragmentats i oportunistes, però reals. L'article reclama que Europa s'hi impliqui pragmàticament en comptes d'ignorar-los o de condemnar-los per no ajustar-se als seus estàndards normatius. La no-participació d'Europa en aquest reordenament té un cost estratègic creixent.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">ECFR · 11 febrer 2026</span></div>
+        <h3 class="art-title"><a href="https://ecfr.eu/publication/the-european-archipelago-building-bridges-in-a-post-western-europe/" target="_blank" rel="noopener">L'arxipèlag europeu: construir ponts en una Europa post-occidental</a></h3>
+        <p class="art-body">Belin i Zerka proposen que Europa, en l'era Trump, ha d'actuar com un arxipèlag d'illes d'opinió pública que cal connectar per crear majories d'acció. La fragmentació interna europea no és necessàriament una debilitat si es gestiona com a diversitat estratègica: permetre que alguns estats avancin més ràpid en defensa, que d'altres liderin en diplomàcia econòmica, i construir ponts entre aquestes «illes» per crear una massa crítica d'acció. L'alternativa —esperar el consens dels 27— és la paràlisi.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Carnegie Europe · Març 2026</span></div>
+        <h3 class="art-title"><a href="https://carnegieendowment.org/europe/strategic-europe/2026/03/europe-and-the-arab-gulf-must-come-together" target="_blank" rel="noopener">Europa i el Golf Àrab: una aliança estratègica que no es pot ajornar</a></h3>
+        <p class="art-body">Rym Momtaz argumenta que el moment actual obre una finestra única: EUA distret al Pròxim Orient, Rússia replegada, Xina amb menys marge. Europa i els estats del Golf Àrab convergeixen en interessos complementaris —subministrament energètic i transició verda per a Europa; garanties de seguretat i legitimació internacional per als estats del Golf. La proposta: avançar cap a un acord marc de cooperació estratègica que superi els límits dels actuals acords bilaterals, incloent dimensions de seguretat, energia i tecnologia.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s4">
+      <div class="sec-hdr">
+        <span class="sec-num">IV</span>
+        <div>
+          <div class="sec-cat">Economia · Comerç · Finances</div>
+          <h2 class="sec-name">Economia global: resiliència fràgil sota pressió arancelera</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">FMI · Març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.imf.org/en/news/articles/2026/03/09/sp030926-coping-and-thriving-in-a-fluid-world" target="_blank" rel="noopener">El FMI manté el creixement global al 3,3% malgrat els xocs: però adverteix de fragilitats creixents</a></h3>
+        <p class="art-body">La directora general del FMI, Kristalina Georgieva, en un discurs a Tòquio, resumeix l'estat de l'economia global: creixement al 3,3% el 2026 i 3,2% el 2027, «una resiliència notable malgrat les disrupcions comercials significatives». Però les advertències son clares: cada augment del 10% en el preu del petroli —si persistent— genera 40 punts bàsics d'inflació global i un 0,1-0,2% de caiguda de l'output. El nou conflicte al Pròxim Orient ha reduït el tràfic pel Dret d'Ormuz en un 90%. La seva recepta als governs: «pensa en l'impensable i prepara't».</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Bruegel · 11 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.bruegel.org/analysis/dependence-fossil-fuels-not-united-states-europes-worry" target="_blank" rel="noopener">La dependència energètica d'Europa és dels combustibles fòssils, no dels EUA</a></h3>
+        <p class="art-body">Keliauskaitė, McWilliams i Zachmann corregeixen el relat dominant: la vulnerabilitat estratègica d'Europa no és la dependència americana sinó la dels combustibles fòssils en general. Des del tall del gas rus, els EUA han passat a ser el primer proveïdor de GNL, però els mercats de GNL son molt més diversificats que els gasoductes russos. El risc real: qualsevol conflicte regional —com la guerra iraniana— es tradueix immediatament en pressió sobre els preus energètics europeus. L'acceleració de la transició energètica és la millor assegurança geoestratègica d'Europa.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">PIIE · 2025-2026</span></div>
+        <h3 class="art-title"><a href="https://www.piie.com/research/piie-charts/2025/trumps-tariff-revenue-tracker-how-much-us-collecting-which-imports-are" target="_blank" rel="noopener">Seguiment en temps real dels aranzels de Trump: els consumidors americans paguen la factura</a></h3>
+        <p class="art-body">El tracker del Peterson Institute confirma que els consumidors americans estan pagant la major part del cost dels aranzels de Trump en forma de preus més alts, mentre que els guanys industrials prometuts han estat molt limitats. Les represàlies de la UE, Canadà, Xina i Mèxic estan reconfigurant les cadenes globals de valor. La crisi comercial actual és la més greu des dels anys 30, amb efectes dominó difícilment predictibles en unes cadenes de subministrament altament interconnectades.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Bruegel · 18 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.bruegel.org/podcast/italy-and-europe" target="_blank" rel="noopener">Itàlia i Europa: creixement lent, deute alt i la paradoxa Meloni</a></h3>
+        <p class="art-body">Bruegel examina el cas italià com a prova de foc de l'eurozona. Meloni governa un país amb creixement estructuralment baix i un dels deutes públics més alts del món, dependent dels fons europeus del NextGenerationEU. La paradoxa és il·lustrativa: la primera ministra que va arribar amb un discurs d'impugnació de Brussel·les ara necessita la UE per finançar les seves polítiques. Itàlia il·lustra els límits del sobiranism europeu: sense el paraigua de la BCE i els fons comunitaris, cap govern italià podria sostenir-se als mercats de deute.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s5">
+      <div class="sec-hdr">
+        <span class="sec-num">V</span>
+        <div>
+          <div class="sec-cat">Tecnologia · Societat · Futur</div>
+          <h2 class="sec-name">IA, demografia i els límits del model de creixement</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">Club of Rome · 16 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.clubofrome.org/pillars/material-transformations/agi-open-letter/" target="_blank" rel="noopener">Carta oberta a l'ONU: calen mesures d'emergència per governar la Intel·ligència Artificial General</a></h3>
+        <p class="art-body">Més de trenta líders internacionals —científics, acadèmics i representants de la societat civil— demanen al president de l'Assemblea General de l'ONU una sessió especial dedicada a la governança de l'AGI. L'argument: a diferència dels sistemes d'IA actuals, l'AGI podria reescriure el seu propi codi i desenvolupar objectius fora del control humà. Paul Shrivastava (Club of Rome): «L'AGI no és un problema futur, arriba ara». Jerome Glenn adverteix que el panel científic de l'ONU trigarà un any a produir les seves primeres conclusions —i que en aquest temps la IA haurà avançat diverses generacions. El repte de governar l'AGI serà «el repte de gestió més difícil que la humanitat hagi hagut d'afrontar mai».</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">RAND · 17 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/research_reports/RRA4742-1.html" target="_blank" rel="noopener">Més estudiants fan servir la IA per als deures i creuen que perjudica el pensament crític</a></h3>
+        <p class="art-body">Schwartz i Diliberti (RAND) presenten una enquesta a 1.214 joves americans: creixement accelerat de l'ús d'IA per a tasques escolars al llarg de 2025, però el 60% dels qui la fan servir expressa preocupació per l'impacte en la seva pròpia formació intel·lectual. La paradoxa pedagògica: l'eina que hauria de millorar l'aprenentatge es percep com un substitut del pensament propi. L'informe proposa polítiques d'«IA com a suport, no com a substitut», amb formació en l'ús crític i criteris d'avaluació que no puguin ser resolts simplement delegant en sistemes automatitzats.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Club of Rome · 9 febrer 2026</span></div>
+        <h3 class="art-title"><a href="https://www.clubofrome.org/reports/the-end-of-population-growth/" target="_blank" rel="noopener">La fi del creixement demogràfic: les societats no estan preparades per al canvi</a></h3>
+        <p class="art-body">Ugo Bardi, en un nou informe per al Club of Rome, argumenta que la població mundial iniciarà un descens molt abans del que s'assumeix generalment —fins i tot a l'Àfrica subsahariana. Les societats que operen sobre models de creixement demogràfic indefinit —sistemes de pensions de repartiment, economies dependents d'una força laboral creixent— s'enfrontaran a crisis estructurals greus. La recomanació central: trencar amb la negació col·lectiva i dissenyar polítiques públiques per a un món amb menys gent, sense ni dramatitzar ni ignorar el canvi.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Fondation Jean-Jaurès · 12 març 2026</span></div>
+        <h3 class="art-title"><a href="https://www.jean-jaures.org/videos-podcasts/municipales-quelle-recomposition-et-quels-clivages-a-un-an-de-la-presidentielle/" target="_blank" rel="noopener">França: eleccions municipals 2026, recomposició política a un any de les presidencials</a></h3>
+        <p class="art-body">Chau, Finchelstein i Muxel de la Fondation Jean-Jaurès analitzen com les municipals 2026 reconfiguran el mapa polític francès a un any vista de les presidencials. Triple fragmentació: la dreta tradicional no s'ha refet, l'esquerra continua dividida entre el PS i la França Insubmisa, i la bipolaritat Macron/Le Pen s'ha complicat amb nous actors. El sistema electoral d'una volta a les municipals afavoreix aliances locals que difícilment es traslladen al presidencial 2027. L'escenari és completament obert.</p>
+      </div>
+    </section>
+    <hr class="divider">
+
+    <section class="estat-section">
+      <div class="estat-sec-hdr">
+        <div class="estat-sec-eyebrow">Estadístiques · Eurostat</div>
+        <div class="estat-sec-title">PIB i creixement econòmic</div>
+        <div class="estat-sec-sub">Variació trimestral del PIB — Zona Euro (%)</div>
+      </div>
+      <div class="estat-chart-wrap"><canvas id="estat-main-chart"></canvas></div>
+      <div class="estat-pubs-block">
+        <div class="estat-pubs-label">Darreres publicacions d'Eurostat <a href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener">Veure totes →</a></div>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-18032026-ap" target="_blank" rel="noopener"><span class="estat-pub-date">18 març 2026</span><span class="estat-pub-title">Inflació zona euro: 1,9% el febrer de 2026</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/databrowser/view/NAMQ_10_GDP" target="_blank" rel="noopener"><span class="estat-pub-date">19 març 2026</span><span class="estat-pub-title">PIB i components principals — actualització Q4 2025</span><span class="estat-pub-tag">Dades</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">17 març 2026</span><span class="estat-pub-title">Atur UE: 5,8% al gener de 2026</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">14 març 2026</span><span class="estat-pub-title">Producció industrial — reducció de l'1,5% al gener</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">12 març 2026</span><span class="estat-pub-title">Costos laborals horaris: +3,3% al Q4 2025 (zona euro)</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/web/interactive-publications/energy-2026" target="_blank" rel="noopener"><span class="estat-pub-date">10 març 2026</span><span class="estat-pub-title">Energia a Europa — Publicació interactiva 2026</span><span class="estat-pub-tag">Publicació</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/statistics-explained/index.php/International_trade_in_goods_statistics" target="_blank" rel="noopener"><span class="estat-pub-date">7 març 2026</span><span class="estat-pub-title">Comerç exterior UE: balanç del Q4 2025</span><span class="estat-pub-tag">Dades</span></a>
+      </div>
+    </section>
+    <hr class="divider">
+
+  <footer class="nl-footer">
+    <div class="nl-footer-title">Estat del Món</div>
+    <div class="nl-footer-text">Fonts: RAND · Bruegel · Carnegie Endowment · CSIS · ECFR · SIPRI · Crisis Group · Club of Rome · PIIE · IMF · Fondation Jean-Jaurès<br>Compilat el 20 de març de 2026 · Edició núm. 1 · Per a ús intern i informatiu</div>
+
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+function loadEstatChart(labels,data,color,unit){
+  const c=document.getElementById('estat-main-chart');if(!c)return;
+  new Chart(c,{type:'line',data:{labels,datasets:[{data,borderColor:color,backgroundColor:color+'18',borderWidth:2.5,pointRadius:3,tension:0.35,fill:true,spanGaps:true}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.parsed.y!==null?ctx.parsed.y.toFixed(2):'—'} ${unit}`}}},scales:{x:{ticks:{font:{size:10},maxRotation:45,color:'#888',autoSkip:false,maxTicksLimit:12},grid:{color:'#e8e6df'}},y:{ticks:{font:{size:10},color:'#888'},grid:{color:'#e8e6df'}}}}});
+}
+loadEstatChart(["2022-Q1","2022-Q2","2022-Q3","2022-Q4","2023-Q1","2023-Q2","2023-Q3","2023-Q4","2024-Q1","2024-Q2","2024-Q3","2024-Q4","2025-Q1","2025-Q2","2025-Q3","2025-Q4"],[0.7,0.9,0.5,-0.1,0,0.2,0,0.1,0.3,0.2,0.4,0.4,0.6,0.1,0.3,0.2],'#1a3a7a','% var. trim.');
+</script>
+</body>
+</html>
