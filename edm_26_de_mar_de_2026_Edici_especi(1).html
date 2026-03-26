@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estat del Món · 26 de març de 2026 · Edició especial: Intel·ligència Artificial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2a4a;--navy2:#243660;--light:#e8edf8;--ink:#1a1a18;--ink2:#333330;--muted:#777770;--bg:#faf9f6;--bg2:#f3f2ee;--card:#fff;--border:#d8d6cf;--border2:#e8e6df}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.7}
+.page{max-width:780px;margin:0 auto;padding:0 2rem 4rem}
+@media(max-width:600px){.page{padding:0 1.2rem 3rem}}
+.nl-header{background:var(--navy);padding:2rem 2rem 1.6rem;margin:0 -2rem 2rem;@media(max-width:600px){margin:0 -1.2rem 1.5rem}}
+.nl-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.nl-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,2.8rem);font-weight:600;color:#fff;line-height:1.1}
+.nl-tagline{font-size:14px;color:rgba(255,255,255,.6);margin-top:4px;font-style:italic}
+.nl-date{font-size:11px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.toc-box{background:var(--bg2);border-radius:8px;padding:1.2rem 1.4rem;margin-bottom:2rem;border:1px solid var(--border)}
+.toc-label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+.toc-link{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--navy);text-decoration:none;padding:5px 0;border-bottom:.5px solid var(--border2);transition:color .15s}
+.toc-link:last-child{border-bottom:none}
+.toc-link:hover{color:var(--navy2)}
+.toc-num{font-family:'Playfair Display',serif;font-size:16px;color:var(--border);min-width:22px}
+.toc-name{flex:1}
+.editorial{background:var(--bg2);border-left:4px solid var(--navy);padding:1.6rem 1.8rem;border-radius:0 8px 8px 0;margin-bottom:2.5rem}
+.ed-label{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:6px}
+.ed-title{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;color:var(--navy);margin-bottom:.9rem;line-height:1.3}
+.ed-text{font-size:15px;line-height:1.8;color:var(--ink2)}
+.ed-text p+p{margin-top:.85rem}
+hr.divider{border:none;border-top:1.5px solid var(--border);margin:2.5rem 0}
+.sec-hdr{display:flex;align-items:flex-start;gap:14px;padding:1rem 0 .8rem;border-top:2.5px solid var(--navy);margin-bottom:1rem}
+.sec-num{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:400;color:rgba(26,42,74,.18);line-height:1;min-width:48px}
+.sec-cat{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:3px}
+.sec-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--navy);line-height:1.2}
+.art-lead{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--navy);border-radius:8px;padding:1.4rem 1.6rem;margin-bottom:.5rem}
+.art-card{border-top:1px solid var(--border2);padding:1rem 0}
+.art-card:last-child{border-bottom:1px solid var(--border2)}
+.art-meta{margin-bottom:.4rem}
+.src-badge{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:var(--bg2);padding:2px 8px;border-radius:4px;border:1px solid var(--border2)}
+.art-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;line-height:1.35;margin-bottom:.4rem}
+.art-lead .art-title{font-size:1.15rem}
+.art-title a{color:var(--navy);text-decoration:none;border-bottom:1.5px solid #c0cce0;transition:border-color .15s,color .15s}
+.art-title a:hover{border-bottom-color:var(--navy)}
+.art-body{font-size:14.5px;line-height:1.76;color:var(--ink2)}
+.estat-section{margin:2.5rem 0}
+.estat-sec-hdr{border-top:2.5px solid var(--navy);padding-top:.8rem;margin-bottom:1rem}
+.estat-sec-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:4px}
+.estat-sec-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:2px}
+.estat-sec-sub{font-size:11px;color:var(--muted)}
+.estat-chart-wrap{position:relative;height:220px;margin:1rem 0}
+.estat-pubs-block{margin-top:1rem;border-top:1px solid var(--border2);padding-top:.8rem}
+.estat-pubs-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.estat-pubs-label a{font-size:11px;color:var(--navy);text-decoration:none;text-transform:none;letter-spacing:0;border-bottom:1px solid var(--border)}
+.estat-pubs-label a:hover{border-bottom-color:var(--navy)}
+.estat-pub-link{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:.5px solid var(--border2);text-decoration:none;color:inherit}
+.estat-pub-link:last-child{border-bottom:none}
+.estat-pub-link:hover .estat-pub-title{color:var(--navy)}
+.estat-pub-date{font-size:11px;color:var(--muted);white-space:nowrap;min-width:90px;flex-shrink:0;padding-top:2px}
+.estat-pub-title{font-size:13px;color:var(--ink);line-height:1.4;flex:1;transition:color .15s}
+.estat-pub-tag{font-size:10px;color:var(--muted);background:var(--bg2);border:1px solid var(--border2);padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.archive-section{border-top:1px solid var(--border);margin-top:2rem;padding-top:1.2rem}
+.archive-label{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:8px}
+.arch-link{display:block;font-size:13px;color:var(--navy);text-decoration:none;padding:5px 0;border-bottom:.5px solid var(--border2);transition:color .15s}
+.arch-link:last-child{border-bottom:none}
+.arch-link:hover{color:var(--navy2)}
+.nl-footer{border-top:2px solid var(--navy);margin-top:2.5rem;padding-top:1.2rem}
+.nl-footer-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:4px}
+.nl-footer-text{font-size:12px;color:var(--muted);line-height:1.7}
+@media(max-width:600px){.estat-charts{grid-template-columns:1fr}.nl-header{margin:0 -1.2rem 1.5rem;padding:1.5rem 1.2rem 1.2rem}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="nl-header">
+    <div class="nl-eyebrow">Anàlisi estratègica global</div>
+    <h1 class="nl-title">Estat del Món</h1>
+    <p class="nl-tagline"></p>
+    <p class="nl-date">26 de març de 2026 · Edició especial: Intel·ligència Artificial</p>
+  </header>
+
+  <nav class="toc-box">
+    <div class="toc-label">En aquest número</div>
+      <a class="toc-link" href="#sec-s1"><span class="toc-num">1</span><span class="toc-name">La gran cursa: EUA, Xina i el control de la IA</span></a>
+      <a class="toc-link" href="#sec-s2"><span class="toc-num">2</span><span class="toc-name">L'AI Act europeu i el dilema entre regular i competir</span></a>
+      <a class="toc-link" href="#sec-s3"><span class="toc-num">3</span><span class="toc-name">IA militar: de la teoria a l'ús actiu als camps de batalla</span></a>
+      <a class="toc-link" href="#sec-s4"><span class="toc-num">4</span><span class="toc-name">Mercat laboral, productivitat i la nova polarització econòmica</span></a>
+      <a class="toc-link" href="#sec-s5"><span class="toc-num">5</span><span class="toc-name">IA a les escoles i als hospitals: adopció sense governança</span></a>
+      <a class="toc-link" href="#sec-s6"><span class="toc-num">6</span><span class="toc-name">El cost energètic de la IA: una bomba de rellotgeria climàtica o un problema gestionable?</span></a>
+  </nav>
+
+  <section class="editorial">
+    <div class="ed-label">Editorial</div>
+    <h2 class="ed-title">La tecnologia que ho reorganitza tot</h2>
+    <div class="ed-text">
+        <p>Hi ha moments en la història en què una tecnologia deixa de ser una eina sectorial i es converteix en el principi organitzador de tota l'activitat humana. La impremta, l'electricitat, internet: cada una va reconfigurar no sols el que fèiem sinó com ens pensàvem. La intel·ligència artificial ha entrat de ple en aquesta categoria. Ja no és una qüestió tecnològica. És una qüestió política, econòmica, militar, educativa i, en última instància, filosòfica.</p>
+        <p>El que destil·len les anàlisis d'aquesta edició especial és una paradoxa central: la mateixa tecnologia que promet augmentar la productivitat i democratitzar l'accés al coneixement és la que amenaça de concentrar el poder en mans d'un grapat d'empreses i estats, d'aprofundir les desigualtats entre nacions i dins de cada societat, i de degradar les capacitats cognitives de les generacions que en depenen. La IA és al mateix temps la solució i el problema.</p>
+        <p>Geopolíticament, la cursa és inequívoca: els EUA i la Xina s'han llançat a una competència pel control de la cadena de valor de la IA —des dels semiconductors fins als models de llenguatge— que s'assembla menys a una carrera espacial i més a un conflicte d'infraestructures globals. Europa, mentre elabora la regulació més ambiciosa del món, es pregunta si regular sense innovar equival a abdicar. I la resta del món —l'Àfrica, el Sud-est Asiàtic, l'Amèrica Llatina— s'adona que pot quedar atrapada en una nova dependència tecnològica que reprodueix els patrons del colonialisme digital.</p>
+        <p>En l'àmbit social, els senyals d'alerta s'acumulen: la directora del FMI parla de 'tsunami' per als llocs de treball d'entrada, especialment per als joves; Brookings conclou que a les escoles els riscos de la IA superen avui els beneficis; els hospitals corren cap a l'adopció de la IA sense haver resolt la governança. I en l'àmbit militar, el think tank SIPRI documenta com els estats ja compraven sistemes autònoms mentre negociaven a Ginebra la prohibició dels mateixos sistemes.</p>
+        <p>El que està realment en joc no és si la IA serà poderosa —ja ho és— sinó qui la controla, qui en defineix les normes i qui absorbeix els costos de la transició. Aquestes decisions no les prendran algorismes. Les prendran, o no, les democràcies que avui assisteixen entre la fascinació i la passivitat a la reconfiguració del món.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+    <section id="sec-s1">
+      <div class="sec-hdr">
+        <span class="sec-num">1</span>
+        <div>
+          <div class="sec-cat">Geopolítica i potència</div>
+          <h2 class="sec-name">La gran cursa: EUA, Xina i el control de la IA</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">RAND / CSIS / Atlantic Council</span></div>
+        <h3 class="art-title"><a href="https://www.rand.org/pubs/research_reports/RRA4355-1.html" target="_blank" rel="noopener">La cursa per la IA supera en escala la carrera espacial i decidirà l'ordre global del segle XXI</a></h3>
+        <p class="art-body">La RAND Corporation i el CSIS han publicat recentment anàlisis que convergeixen en un diagnòstic: la cursa de la IA no és comparable a la carrera espacial, perquè la seva escala d'inversió privada és molt superior i les implicacions econòmiques, molt més directes. Només Meta, Alphabet, Microsoft, Amazon i Oracle gastaran conjuntament més de 450.000 milions de dòlars en capital específicament destinat a IA el 2026. NVIDIA ha superat una capitalització de mercat de 5 bilions de dòlars, una xifra que supera el PIB d'Alemanya.
+
+La Xina ha respost al 'escanyament computacional' nord-americà —la restricció d'exportació de xips avançats— amb una estratègia dual: accelerar el desenvolupament de semiconductors domèstics (SMIC segueix encallada al node de 7 nm per la manca d'eines d'EUV, de les quals ASML és el proveïdor exclusiu) i invertir en models d'IA eficients que compensin la limitació de potència de càlcul. L'exemple paradigmàtic és DeepSeek, que va demostrar que és possible construir models competitius amb recursos computacionals molt inferiors als dels laboratoris nord-americans, erosionant parcialment el "moat" tecnològic dels EUA.
+
+Segons la RAND, els models lingüístics de base nord-americana mantenen una avantatge de mercat global gràcies a la prioritat cronològica i a la superioritat tècnica, però aquesta posició no és garantida. Les estratègies divergeixen: els EUA aposten per escalar models fronterers i exportar el 'tech stack' nord-americà com a palanca d'influència geopolítica; la Xina prioritza l'aplicació pràctica als reptes industrials i l'ús del codi obert per construir aliances amb tercers països.
+
+L'Atlàntic Council subratlla que els EUA han optat per una postura paradoxal: ampliar els controls d'exportació de xips avançats a la Xina mentre permeten l'exportació de models de IA als aliats com a eina diplomàtica. La revisió de la 'AI Diffusion Rule' de l'administració Trump ha agrupat els països en tres categories d'accés tecnològic, generant friccions amb alguns aliats europeus que no han estat inclosos en el primer rang. El resultat és un mapa mundial d'accés a la IA que reprodueix i amplifica les divisions geopolítiques existents.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">CSIS / RAND</span></div>
+        <h3 class="art-title"><a href="https://www.csis.org/analysis/architecture-ai-leadership-enforcement-innovation-and-global-trust" target="_blank" rel="noopener">La guerra dels xips: controls d'exportació, mercats grisos i el dilema de Taiwan en la cadena de subministrament global</a></h3>
+        <p class="art-body">Els controls d'exportació nord-americans sobre semiconductors avançats, iniciats el 2022 i amplients en successives rondes, han aconseguit alentir el progrés de la indústria xinesa de fabricació de xips —SMIC segueix encallada al node de 7 nm i és probable que continuï anys en aquesta posició— però no han impedit als laboratoris xinesos d'IA produir models competitius gràcies a innovacions en eficiència algorítmica.
+
+El CSIS documenta una vulnerabilitat sistèmica: l'empresa taiwanesa TSMC produeix més del 90% dels xips avançats del món, i la concentració geogràfica d'una infraestructura tan crítica en una regió geopolíticament disputada és un risc que cap estratègia tecnològica pot ignorar. Que un país o empresa desvii xips a través de mercats grisos demostra que la verificació tècnica de la destinació final dels semiconductors és extremament difícil quan els centres de dades operen darrere de tallafocs o no estan permanentment connectats.
+
+La controvèrsia del xip H20 de Nvidia il·lustra les friccions diplomàtiques que acompanyen la militarització tecnològica: l'Administració de Ciberseguretat de la Xina va citar presumptes 'riscos de porta del darrere' en xips dissenyats específicament per al mercat xinès, mentre Nvidia va negar qualsevol mecanisme ocult. L'episodi mostra com les mesures de compliment tècnic poden ser reencamarades com a amenaces a la sobirania digital, donant arguments a competidors que ofereixen alternatives 'de confiança'.
+
+La RAND adverteix que mantenir la supremacia nord-americana en IA exigeix una coordinació plurilateral amb aliats —Japó, Països Baixos i Corea del Sud controlen segments crítics de la cadena de fabricació— però que les pressions comercials i les dinàmiques de competència interna erosionen la coherència d'aquesta coalició.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s2">
+      <div class="sec-hdr">
+        <span class="sec-num">2</span>
+        <div>
+          <div class="sec-cat">Regulació i governança</div>
+          <h2 class="sec-name">L'AI Act europeu i el dilema entre regular i competir</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">Carnegie / Bruegel / Comissió Europea</span></div>
+        <h3 class="art-title"><a href="https://carnegieendowment.org/research/2025/05/the-eus-ai-power-play-between-deregulation-and-innovation" target="_blank" rel="noopener">L'AI Act europeu arriba a la seva fase crítica: pot Europa liderar per regulació sense tenir capacitat industrial pròpia?</a></h3>
+        <p class="art-body">La Carnegie Endowment i Bruegel convergeixen en un diagnòstic incòmode: l'AI Act europeu és un instrument regulatori sofisticat que classifica els sistemes d'IA per risc, prohibeix les aplicacions de risc inacceptable (com la puntuació social a l'estil xinès), estableix obligacions per als sistemes d'alt risc i crea requisits de transparència per als models d'IA generativa. A partir de l'agost de 2026, les regles per als sistemes d'alt risc —inclosos els sistemes mèdics, d'educació i de reclutament— estaran en vigor. Els estàndards de transparència per als models de propòsit general ja s'apliquen des de l'agost de 2025.
+
+Tanmateix, la Carnegie adverteix d'una paradoxa estructural: Europa és potent com a regulador però feble com a innovador. La indústria europea d'IA és limitada, el finançament d'aventura per a startups d'IA és una fracció del nord-americà i el xinès, i el pressupost d'infraestructura de computació (EuroHPC, 7.000 milions d'euros per al període 2021-2027) és infinitament petit comparat amb els 450.000 milions que invertirien cinc empreses nord-americanes el 2026 sols.
+
+Bruegel argumenta que l'estratègia europea hauria de consistir no en competir en el desenvolupament de models fronterers —terreny on els EUA i la Xina porten avantatge decisiu— sinó en capitalitzar el mercat únic per liderar l'adopció responsable i la regulació de les millors tecnologies disponibles. Mario Draghi, al seu informe de setembre de 2024 sobre la competitivitat europea, va reclamar inversions massives en models d'IA europeus, actualitzar EuroHPC, crear fàbriques d'IA similars al model del CERN, i constituir reserves de dades a escala europea.
+
+La pressió desreguladora és creixent: els EUA han optat per estàndards voluntaris i les empreses tecnològiques nord-americanes han criticat obertament l'AI Act com a obstacle a la innovació. Davant d'això, la Comissió Europea ha iniciat un cert gir cap a la innovació que la Carnegie considera arriscat si comporta erosionar les salvaguardes democràtiques sense resoldre el problema estructural de manca d'indústria pròpia. El dilema és real: si Europa no relaxa, pot perdre innovació; si relaxa, pot perdre credibilitat com a guardiana dels drets digitals.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Carnegie / Atlantic Council</span></div>
+        <h3 class="art-title"><a href="https://www.atlanticcouncil.org/dispatches/eight-ways-ai-will-shape-geopolitics-in-2026/" target="_blank" rel="noopener">La governança global de la IA s'estanca: convergència en principis, bloqueig en normes vinculants sobre sistemes d'alt risc</a></h3>
+        <p class="art-body">L'Atlantic Council descriu el paisatge de governança global de la IA com una arquitectura fràgil i desigual: els EUA defensen estàndards voluntaris per preservar la flexibilitat d'innovació i seguretat; Europa promou un model regulatori basat en drets i avaluació de riscos; la Xina defensa una 'cooperació inclusiva' mentre protegeix el control estatal sobre dades i desplegament. Els estats més petits i els països en desenvolupament participen en les converses globals però continuen sent estructuralment dependents de les grans potències que controlen talent, capital i capacitat de càlcul.
+
+El resultat és una arquitectura de governança que gestiona riscos a la perifèria —transparència, etiquetatge de continguts generats per IA, normes de seguretat bàsiques— però deixa intacte el nucli de la competència estratègica. L'Oficina Europea d'IA, creada el 2024 com a cos supervisor i d'execució de l'AI Act, ha publicat directrius preliminars sobre models de propòsit general, però la seva autoritat real sobre els sistemes desplegats per empreses nord-americanes i xineses fora del territori europeu és limitada.
+
+El Secretari General de les Nacions Unides va reclamar un tractat vinculant que prohibeixi els sistemes d'armes letals autònoms que operin sense supervisió humana, amb un objectiu de finalització el 2026. A data d'avui, aquest termini sembla inassolible: les negociacions al si de la Convenció sobre Certes Armes Convencionals (CCW) avancen a un ritme molt inferior al de l'adopció real dels sistemes autònoms als camps de batalla d'Ucraïna i d'altres conflictes actius.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s3">
+      <div class="sec-hdr">
+        <span class="sec-num">3</span>
+        <div>
+          <div class="sec-cat">Defensa i seguretat</div>
+          <h2 class="sec-name">IA militar: de la teoria a l'ús actiu als camps de batalla</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">SIPRI / CSIS</span></div>
+        <h3 class="art-title"><a href="https://www.sipri.org/news/2026/sipri-ccw-gge-autonomous-weapons" target="_blank" rel="noopener">Abisme creixent entre els principis de la IA responsable i les pràctiques d'adquisició militar dels estats</a></h3>
+        <p class="art-body">SIPRI ha publicat al febrer de 2026 dos informes rellevants que analitzen des d'angles complementaris la militarització de la IA. El primer, sobre l'adquisició responsable d'IA militar, constata que els processos de compra governamental representen un punt crític on es tradueixen (o no) els compromisos d'alt nivell en pràctiques concretes. L'acceleració de l'adopció és innegable, però la integració de criteris de responsabilitat, traçabilitat i explicabilitat als plecs de condicions és l'excepció, no la norma.
+
+El segon informe de SIPRI, sobre la IA en les postures nuclears de la Xina, l'Índia i els EUA, documenta com l'aplicació de la IA als sistemes d'alerta primerenca nuclear, als ciberatacs sobre infraestructures de comandament i control, i als submarins autònoms amb capacitat de porta-míssils balístics introdueix nous vectors de risc d'escalada. L'autor, Lora Saalman, assenyala que les diferències en normes i sistemes entre les tres potències nuclears augmenten la probabilitat de malentesos en situació de crisi.
+
+El CSIS aporta una perspectiva complementària des dels wargames: en simulacions de crisi entre dues potències hipotètiques, la variació del nivell d'integració d'IA no va alterar significativament l'estratègia global —els estats continuen combinant diplomàcia, coerció econòmica i força militar— però els buits d'informació sobre les capacitats d'IA d'un adversari augmenten el risc d'escalada un cop s'ha creuat el llindar del conflicte actiu.
+
+L'experiència d'Ucraïna és il·lustrativa: drones amb capacitat de targeting autònom, sistemes d'analítica de camp de batalla basats en IA i la integració de la IA en operacions d'influència han estat desplegats a escala operacional real molt abans que la comunitat internacional hagi establert cap marc regulatori aplicable. El risc d'anar-se habituat als sistemes autònoms com a 'normalitat operacional' sense haver definit els límits legals i ètics és real i creixent.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">CSIS</span></div>
+        <h3 class="art-title"><a href="https://www.csis.org/blogs/strategic-technologies-blog/harnessing-edge-ai-strengthen-national-security" target="_blank" rel="noopener">La "Edge AI" redefineix la guerra de proximitat: drones intel·ligents, infraestructura crítica i decisió a velocitat de màquina</a></h3>
+        <p class="art-body">L'informe del CSIS sobre edge AI per a la seguretat nacional descriu una divisió important que sovint s'oblida en el debat públic: la distinció entre l'entrenament dels models —que requereix massives infraestructures centralitzades— i la inferència, és a dir, l'aplicació del model entrenat a situacions noves en temps real. Mentre l'entrenament necessita superclusters de GPUs, la inferència pot executar-se en dispositius petits i portables.
+
+Això té implicacions militars directes. Un dron equipat amb edge AI pot classificar objectius en el seu propi camp visual i ajustar la trajectòria sense esperar instruccions del centre de comandament, operant efectivament fins i tot quan les comunicacions estan tallades o interferides. Un sistema de vigilància de perímetre pot detectar intrusos i actuar localment. Un sensor industrial en una central energètica pot identificar patrons anòmals i activar contramesures automàtiques.
+
+El CSIS assenyala el paper de les xarxes de bessons digitals —rèpliques virtuals de sistemes físics com xarxes elèctriques o plantes d'aigua— com a complement de l'edge AI: mentre el bessó digital ofereix una imatge holística del sistema per anticipar atacs, els sensors locals amb capacitat d'IA processen el flux de dades en temps real sense col·lapsar l'amplada de banda.
+
+La implicació estratègica és que la capacitat militar no depèn exclusivament dels models fronterers de les grans potències tecnològiques. Un actor estatal o no estatal amb accés limitat a computació avançada pot desplegar edge AI en sistemes autònoms si té accés a xips de gamma mitjana i models lleugers. Això democratitza parcialment la capacitat letal autònoma i augmenta el risc de proliferació.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s4">
+      <div class="sec-hdr">
+        <span class="sec-num">4</span>
+        <div>
+          <div class="sec-cat">Economia i treball</div>
+          <h2 class="sec-name">Mercat laboral, productivitat i la nova polarització econòmica</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">FMI</span></div>
+        <h3 class="art-title"><a href="https://www.imf.org/en/publications/staff-discussion-notes/issues/2026/01/09/bridging-skill-gaps-for-the-future-new-jobs-creation-in-the-ai-age-572136" target="_blank" rel="noopener">El FMI alerta d'un 'tsunami' de IA per als llocs de treball d'entrada: joves i dones, els grups més exposats a la substitució</a></h3>
+        <p class="art-body">L'informe 'Bridging Skill Gaps for the Future' (SDN 2026/001) del FMI analitza la demanda i oferta de competències noves en economies avançades i emergents. Les troballes principals quantifiquen una transformació en marxa: aproximadament un de cada deu anuncis de feina en economies avançades demana almenys una competència nova, i les ofertes que exigeixen habilitats d'IA ofereixen salaris entre un 3 i un 3,4% superiors als EUA i el Regne Unit. Fins aquí, les bones notícies.
+
+El revers és més problemàtic. Les competències d'IA estan associades a una menor ocupació en les professions amb alta exposició i baixa complementarietat amb la tecnologia —és a dir, aquelles on la IA substitueix en lloc de complementar el treball humà. Aquesta dinàmica afecta especialment els joves que intenten accedir al mercat laboral, perquè els llocs de treball d'entrada en categories cognitives (anàlisi de dades bàsica, redacció de documents, assistència legal o financera elemental) és precisament on la IA substitueix primer i més eficaçment.
+
+La directora del FMI, Kristalina Georgieva, va resumir el problema al Fòrum de Davos: la IA pot augmentar la productivitat i els ingressos d'alguns treballadors, però per a d'altres —especialment els joves— la conseqüència immediata és menys tasques d'entrada i un mercat laboral contret en els segments d'aprenentatge.
+
+La distribució geogràfica és dispar: la demanda de noves competències apareix primer als EUA i es difon lentament cap a les economies emergents, que registren la meitat de la incidència. Però les economies emergents tampoc han construït la infraestructura formativa per absorbir el canvi, cosa que fa témer que l'impacte diferit pugui ser proportionalment més sever. L'índex de Preparació per a Competències que construeix l'informe revela àmplies diferències entre països: els que afronten demanda forta han de prioritzar l'educació i el reciclatge professional, mentre els que generen excés d'oferta de competències noves han de fomentar l'absorció empresarial via innovació i accés al crèdit.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Carnegie / CSIS</span></div>
+        <h3 class="art-title"><a href="https://www.carnegieendowment.org/europe/strategic-europe/2026/02/how-europe-can-survive-the-ai-labor-transition" target="_blank" rel="noopener">Europa davant la transició laboral de la IA: la regulació tècnica no substitueix la política fiscal i el disseny institucional</a></h3>
+        <p class="art-body">L'anàlisi de Carnegie sobre la supervivència europea a la transició laboral de la IA parteix d'un diagnòstic que els think tanks europeus tendeixen a evitar per incòmode: la diferència entre regular sistemes d'IA i gestionar les conseqüències econòmiques de la seva adopció és tan gran com la diferència entre un codi de trànsit i un pla urbanístic. L'AI Act aborda la primera qüestió; la segona queda en gran mesura sense resposta.
+
+Segons Carnegie, la confiança pública ha de ser un objectiu explícit de la política de transició, no un subproducte. Els treballadors necessiten certesa que els sistemes d'IA que afecten els seus medis de vida operen de forma transparent i justa. Els ciutadans necessiten evidència que els governs gestionen el canvi estructural amb compromís fiscal sostingut, no reaccionant als seus efectes un cop ja s'han produït.
+
+Les xifres del CSIS sobre inversió en infraestructura d'IA il·lustren l'escala de la paradoxa: el capital d'inversió en IA el 2025 va contribuir en 1,1 punts percentuals al creixement del PIB nord-americà en el primer semestre, més que el consum dels consumidors. Però descomptant els equips de processament d'informació i el programari (és a dir, els centres de dades), el creixement del PIB nord-americà en el primer semestre de 2025 va ser del 0,1%. La crisi de distribució dels guanys de la IA no és una projecció: ja és un fet mesurable.
+
+L'OCDE complementa aquest panorama amb dades sobre gestió algorítmica: el 90% dels directius als EUA indiquen que les seves empreses utilitzen almenys una eina de gestió algorítmica, mentre a Europa les xifres oscil·len entre el 76% i el 81%. La gestió per algoritmes —l'automatització de tasques de supervisió tradicionalment humanes— no destrueix sols llocs de treball sinó que transforma la qualitat i les condicions de treball en els sectors que la adopten.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s5">
+      <div class="sec-hdr">
+        <span class="sec-num">5</span>
+        <div>
+          <div class="sec-cat">Educació i societat</div>
+          <h2 class="sec-name">IA a les escoles i als hospitals: adopció sense governança</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">Brookings Institution</span></div>
+        <h3 class="art-title"><a href="https://www.brookings.edu/wp-content/uploads/2026/01/A-New-Direction-for-Students-in-an-AI-World-FULL-REPORT.pdf" target="_blank" rel="noopener">Brookings conclou que a les escoles els riscos de la IA superen avui els beneficis, però adverteix que la prohibició tampoc funciona</a></h3>
+        <p class="art-body">L'informe 'A New Direction for Students in an AI World', liderat per Mary Burns i Rebecca Winthrop, sintetitza troballes de recerca, enquestes a estudiants, famílies, docents i responsables de política educativa en 50 països. El document rebutja tant el tecnoptimisme (la IA resoldrà la crisi educativa global) com el tecnofatalisme (la IA destruirà l'aprenentatge). La seva posició és analíticament més exigent: la IA enriqueix l'aprenentatge sols quan enforteix el nucli de l'educació, és a dir, la interacció entre estudiants, docents i continguts.
+
+Els riscos identificats inclouen: l'escurçament del procés cognitiu (els estudiants utilitzen la IA per obtenir resultats sense construir la comprensió subjacent), la reducció del pensament crític, la bretxa entre eines gratuïtes (menys fiables) i de pagament (més precises), i la manca de salvaguardes per a menors. Sobre aquest darrer punt, Rebecca Winthrop cita un fenomen sense precedents a la història de la tecnologia educativa: per primera vegada, pagar més garanteix accés a informació més precisa.
+
+L'informe organitza les recomanacions en tres eixos interconnectats: 'prosperar' (usar la IA sols quan enforteixi l'aprenentatge profund), 'preparar' (desenvolupar una literacitat holística d'IA) i 'protegir' (salvaguardes de privacitat, benestar i desenvolupament). Crida especialment a l'acció concreta i progressiva: les organitzacions educatives han de triar almenys una recomanació i treballar-hi durant tres anys, sense pretendre transformar-ho tot de cop.
+
+La dificultat de fons és sistèmica: els docents operen sota pressions contradictòries (alguns reben instruccions de restringir la IA per preservar l'avaluació; d'altres, que no limitar-la equivaldrà a no preparar els estudiants per al futur). I els estudiants ja utilitzen la IA extensivament fora de l'escola, sovint sense orientació, normes compartides ni salvaguardes de desenvolupament. Si els educadors es desentenen, el buit s'eixampla.</p>
+      </div>
+      <div class="art-card">
+        <div class="art-meta"><span class="src-badge">Brookings / Wolters Kluwer Health</span></div>
+        <h3 class="art-title"><a href="https://www.brookings.edu/articles/health-and-ai-advancing-responsible-and-ethical-ai-for-all-communities/" target="_blank" rel="noopener">La IA clínica avança cap a la integració total en els hospitals, però la governança interna i el biaix algorítmic continuen sent esculls crítics</a></h3>
+        <p class="art-body">Brookings documenta un problema estructural en la IA sanitària que va més enllà dels debats d'eficiència: molts algorismes clínics d'IA s'han entrenat amb dades on els pacients de certes comunitats ètnicament minoritàries estan infrarepresentats o representats amb biaix. El resultat pràctic és que alguns models d'IA requereixen que els pacients de color presentin símptomes més greus que els pacients blancs per rebre diagnòstics o tractaments equivalents, cosa que amplia les disparitats sanitàries en lloc de reduir-les.
+
+L'anàlisi de Wolters Kluwer sobre les tendències de la IA sanitària el 2026 identifica tres prioritats que les organitzacions de salut estan incorporant: escala (desplegar eines d'IA a tot l'hospital, no sols en projectes pilot), valor (demostrar ROI real, no sols potencial) i confiança (governança, transparència i formació del personal). El gran repte és la 'IA ombra': l'ús de models d'IA generals (com a assistents conversacionals de propòsit general) en contextos clínics per als quals no han estat validats ni aprovats, cosa que genera riscos de privacitat, precisió i responsabilitat legal.
+
+Les tendències tecnològiques apunten que la IA clínica de grau hospitalari —sistemes de suport a la decisió, scribes ambiental per a documentació automàtica, detecció d'imatge per a diagnòstic per la imatge— es convertirà en part integrant dels fluxos de treball el 2026, però caldrà un acompanyament regulatori que avui és fragmentat i insuficient.
+
+El marc 'Prosper, Prepare, Protect' de Brookings, formulat originalment per a l'educació, s'ha exportat directament a la formació de professionals sanitaris: la necessitat de preparar els metges que es graduen avui per a un sistema de salut progressivament configurat per la IA —des del suport a la decisió clínica fins a l'automatització de processos administratius— exigeix una reforma curricular que moltes facultats de medicina encara no han iniciat.</p>
+      </div>
+    </section>
+    <hr class="divider">
+    <section id="sec-s6">
+      <div class="sec-hdr">
+        <span class="sec-num">6</span>
+        <div>
+          <div class="sec-cat">Energia i medi ambient</div>
+          <h2 class="sec-name">El cost energètic de la IA: una bomba de rellotgeria climàtica o un problema gestionable?</h2>
+        </div>
+      </div>
+      <div class="art-lead">
+        <div class="art-meta"><span class="src-badge">AIE / CSIS / Universitat de Waterloo</span></div>
+        <h3 class="art-title"><a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai" target="_blank" rel="noopener">El consum elèctric dels centres de dades es doblarà fins a 2030: la IA és un dels pocs sectors on les emissions continuen creixent</a></h3>
+        <p class="art-body">L'AIE estima que la demanda dels servidors accelerats —principalment impulsada per la IA— creixerà un 30% anual en el cas base, mentre el creixement dels servidors convencionals és del 9% anual. Els servidors accelerats representen gairebé la meitat de l'increment net de la demanda elèctrica dels centres de dades. El 2024, els centres de dades nord-americans van consumir 183 TWh, l'equivalent a la demanda elèctrica anual total del Pakistan. El 2030, la projecció és de 426 TWh, un increment del 133%.
+
+La concentració geogràfica és un problema polític real: a Dublín, els centres de dades consumeixen el 79% de l'electricitat de la capital. A Virgínia, el 26% de l'electricitat estatal. Comunitats locals al voltant de grans centres de dades experimenten pressions sobre la xarxa elèctrica, l'augment de tarifes i l'ús massiu d'aigua per a refrigeració que creen tensions polítiques creixents amb els residents.
+
+Tanmateix, la investigació de la Universitat de Waterloo i el Georgia Institute of Technology publicada al març de 2026 aporta una perspectiva matisadora: tot i que la IA consumeix tanta energia com Islàndia, el seu impacte a les emissions globals és relativament petit a escala planetària. L'impacte és molt més local: les regions on es concentren els centres de dades poden veure duplicar la seva producció d'emissions. I la IA podria contribuir a l'acceleració de la innovació en tecnologies netes, actuant com a multiplicador de la recerca sobre energia renovable.
+
+El CSIS identifica el cercle virtuós potencial: la IA aplicada a la xarxa elèctrica pot reduir costos, millorar la resiliència i integrar millor les energies renovables intermitents. El Pla d'Acció d'IA de l'Administració Trump inclou explícitament la IA per a la gestió de xarxes com a prioritat estratègica. El problema és que els centres de dades necessiten corrent continu les 24 hores, cosa que els fa incompatibles amb les fonts d'energia intermitent, impulsant la demanda de gas natural i fins i tot la reactivació de centrals nuclears tancades.</p>
+      </div>
+    </section>
+    <hr class="divider">
+
+    <section class="estat-section">
+      <div class="estat-sec-hdr">
+        <div class="estat-sec-eyebrow">Estadístiques · Eurostat</div>
+        <div class="estat-sec-title">PIB i creixement econòmic</div>
+        <div class="estat-sec-sub">Variació trimestral del PIB — Zona Euro (%)</div>
+      </div>
+      <div class="estat-chart-wrap"><canvas id="estat-main-chart"></canvas></div>
+      <div class="estat-pubs-block">
+        <div class="estat-pubs-label">Darreres publicacions d'Eurostat <a href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener">Veure totes →</a></div>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-18032026-ap" target="_blank" rel="noopener"><span class="estat-pub-date">18 març 2026</span><span class="estat-pub-title">Inflació zona euro: 1,9% el febrer de 2026</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/databrowser/view/NAMQ_10_GDP" target="_blank" rel="noopener"><span class="estat-pub-date">19 març 2026</span><span class="estat-pub-title">PIB i components principals — actualització Q4 2025</span><span class="estat-pub-tag">Dades</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">17 març 2026</span><span class="estat-pub-title">Atur UE: 5,8% al gener de 2026</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">14 març 2026</span><span class="estat-pub-title">Producció industrial — reducció de l'1,5% al gener</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/news/euro-indicators" target="_blank" rel="noopener"><span class="estat-pub-date">12 març 2026</span><span class="estat-pub-title">Costos laborals horaris: +3,3% al Q4 2025 (zona euro)</span><span class="estat-pub-tag">Euro Indicator</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/web/interactive-publications/energy-2026" target="_blank" rel="noopener"><span class="estat-pub-date">10 març 2026</span><span class="estat-pub-title">Energia a Europa — Publicació interactiva 2026</span><span class="estat-pub-tag">Publicació</span></a>
+          <a class="estat-pub-link" href="https://ec.europa.eu/eurostat/statistics-explained/index.php/International_trade_in_goods_statistics" target="_blank" rel="noopener"><span class="estat-pub-date">7 març 2026</span><span class="estat-pub-title">Comerç exterior UE: balanç del Q4 2025</span><span class="estat-pub-tag">Dades</span></a>
+      </div>
+    </section>
+    <hr class="divider">
+
+  <footer class="nl-footer">
+    <div class="nl-footer-title">Estat del Món</div>
+    <div class="nl-footer-text">Fonts: Estat del Món · Edició setmanal d'anàlisi geopolítica i estratègica<br>Compilat el 26 de març de 2026 · Edició especial: Intel·ligència Artificial · Per a ús intern i informatiu</div>
+    <div class="archive-section">
+      <div class="archive-label">Edicions anteriors</div>
+      <div class="archive-links">
+          <a class="arch-link" href="https://fentprovq2-dot.github.io/estat-del-mon/edm_25_de_mar_de_2026_Edici_n_m_2(2)">25 de març de 2026</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+function loadEstatChart(labels,data,color,unit){
+  const c=document.getElementById('estat-main-chart');if(!c)return;
+  new Chart(c,{type:'line',data:{labels,datasets:[{data,borderColor:color,backgroundColor:color+'18',borderWidth:2.5,pointRadius:3,tension:0.35,fill:true,spanGaps:true}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.parsed.y!==null?ctx.parsed.y.toFixed(2):'—'} ${unit}`}}},scales:{x:{ticks:{font:{size:10},maxRotation:45,color:'#888',autoSkip:false,maxTicksLimit:12},grid:{color:'#e8e6df'}},y:{ticks:{font:{size:10},color:'#888'},grid:{color:'#e8e6df'}}}}});
+}
+loadEstatChart(["2022-Q1","2022-Q2","2022-Q3","2022-Q4","2023-Q1","2023-Q2","2023-Q3","2023-Q4","2024-Q1","2024-Q2","2024-Q3","2024-Q4","2025-Q1","2025-Q2","2025-Q3","2025-Q4"],[0.7,0.9,0.5,-0.1,0,0.2,0,0.1,0.3,0.2,0.4,0.4,0.6,0.1,0.3,0.2],'#1a3a7a','% var. trim.');
+</script>
+</body>
+</html>
